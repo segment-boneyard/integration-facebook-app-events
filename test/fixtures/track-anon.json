@@ -1,0 +1,40 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Opened App",
+    "anonymousId": "anon-id",
+    "properties": {},
+    "context": {
+      "ip": "10.0.0.2",
+      "app": { "namespace": "com.segment.TestApp" },
+      "device": {
+        "manufacturer": "some-brand",
+        "type": "ios"
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-ios"
+      },
+      "referrer": {
+        "type": "iad",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+    "action": "session",
+    "advertiser_id": "159358",
+    "advertiser_ref_id": "some-id",
+    "country_code": "US",
+    "device_brand": "some-brand",
+    "device_carrier": "some-carrier",
+    "device_ip": "10.0.0.2",
+    "iad_attribution": 1,
+    "ios_ad_tracking": 0,
+    "language": "en-US",
+    "package_name": "com.segment.TestApp",
+    "sdk": "ios",
+    "user_id": "anon-id"
+  }
+}

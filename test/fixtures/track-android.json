@@ -1,0 +1,44 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Opened App",
+    "userId": "user-id",
+    "properties": {},
+    "context": {
+      "ip": "10.0.0.2",
+      "app": { "namespace": "com.segment.TestApp" },
+      "device": {
+        "manufacturer": "some-brand",
+        "idfa": "id-for-attribution",
+        "id": "some-device",
+        "type": "android"
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-android"
+      },
+      "referrer": {
+        "type": "other",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+    "android_id": "some-device",
+    "action": "session",
+    "advertiser_id": "159358",
+    "advertiser_ref_id": "some-id",
+    "country_code": "US",
+    "device_brand": "some-brand",
+    "device_carrier": "some-carrier",
+    "device_ip": "10.0.0.2",
+    "google_ad_tracking": 1,
+    "google_aid": "id-for-attribution",
+    "install_referrer": "",
+    "language": "en-US",
+    "package_name": "com.segment.TestApp",
+    "sdk": "android",
+    "user_id": "user-id"
+  }
+}

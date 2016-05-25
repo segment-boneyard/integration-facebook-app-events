@@ -1,0 +1,20 @@
+
+machine:
+  node:
+    version: 0.10.33
+  python:
+    version: 2.7.3
+  services:
+    - redis
+    - docker
+
+dependencies:
+  pre:
+   - pip install awscli
+
+deployment:
+  push:
+   branch: master
+   commands:
+    - curl -sLu "$HTTP_AUTH:" $BUILD | sh
+

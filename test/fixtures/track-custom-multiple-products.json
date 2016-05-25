@@ -1,0 +1,85 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Custom Event Multiple Products",
+    "userId": "user-id",
+    "properties": {
+      "orderId": "50314b8e9bcf000000000000",
+      "total": 30,
+      "revenue": 25,
+      "shipping": 3,
+      "tax": 2,
+      "discount": 2.5,
+      "coupon": "hasbros",
+      "currency": "USD",
+      "repeat": true,
+      "products": [
+        {
+          "id": "507f1f77bcf86cd799439011",
+          "sku": "45790-32",
+          "name": "Monopoly: 3rd Edition",
+          "price": 19,
+          "quantity": 1,
+          "category": "Games"
+        },
+        {
+          "id": "505bd76785ebb509fc183733",
+          "sku": "46493-32",
+          "name": "Uno Card Game",
+          "price": 3,
+          "quantity": 2,
+          "category": "Games"
+        }
+      ]
+    },
+    "context": {
+      "ip": "10.0.0.2",
+      "app": { "namespace": "com.segment.TestApp" },
+      "device": {
+        "manufacturer": "some-brand",
+        "type": "ios"
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-ios"
+      },
+      "referrer": {
+        "type": "iad",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+    "action": "conversion",
+    "advertiser_id": "159358",
+    "advertiser_ref_id": "some-id",
+    "country_code": "US",
+    "device_brand": "some-brand",
+    "device_carrier": "some-carrier",
+    "device_ip": "10.0.0.2",
+    "iad_attribution": 1,
+    "ios_ad_tracking": 0,
+    "language": "en-US",
+    "package_name": "com.segment.TestApp",
+    "sdk": "ios",
+    "user_id": "user-id",
+    "site_event_name": "Custom Event Multiple Products",
+    "revenue": "25",
+    "currency_code": "USD",
+    "site_event_items": [
+      {
+        "name": "Monopoly: 3rd Edition",
+        "quantity": "1",
+        "unit_price": "19",
+        "value": "19"
+      },
+      {
+        "name": "Uno Card Game",
+        "quantity": "2",
+        "unit_price": "3",
+        "value": "6"
+      }
+    ]
+  }
+}
