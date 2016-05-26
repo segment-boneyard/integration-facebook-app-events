@@ -66,10 +66,32 @@ describe('Facebook App Events', function(){
     });
   });
 
+   describe('mapper', function(){
+    describe('track', function(){
+      it('should map basic track', function(){
+        test.maps('track-basic');
+      });
+    });
+    describe('Application Opened', function() {
+      it('should map Application Opened', function(){
+        test.maps('track-app-opened');
+      })
+    });
+  });
+
   describe.skip('track', function(){
 
       it('should track basic correctly', function(done){
         var json = test.fixture('track-basic');
+        test
+          .track(json.input)
+          .query(json.output)
+          .expects(200)
+          .end(done);
+      });
+
+      it('should track Application Opened correctly', function(done){
+        var json = test.fixture('track-app-opened');
         test
           .track(json.input)
           .query(json.output)

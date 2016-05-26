@@ -1,7 +1,7 @@
 {
   "input": {
     "type": "track",
-    "event": "Sang a Song",
+    "event": "Application Opened",
     "userId": "user-id",
     "properties": {},
     "context": {
@@ -24,12 +24,9 @@
     }
   },
   "output": {
-    "event": "CUSTOM_APP_EVENTS",
+    "event": "Launched App",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
-    "application_tracking_enabled": 1,
-    "custom_events": {
-      "_eventName": "Sang a Song"
-    }
+    "application_tracking_enabled": 1
   }
 }
