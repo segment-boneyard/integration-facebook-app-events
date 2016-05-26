@@ -1,7 +1,7 @@
 {
   "input": {
     "type": "track",
-    "event": "Added Product",
+    "event": "Product Added",
     "userId": "user-id",
     "properties": {
       "id": "507f1f77bcf86cd799439011",
@@ -16,7 +16,8 @@
       "app": { "namespace": "com.segment.TestApp" },
       "device": {
         "manufacturer": "some-brand",
-        "type": "ios"
+        "type": "ios",
+        "advertisingId": "159358"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -30,28 +31,13 @@
     }
   },
   "output": {
-    "action": "add_to_cart",
+    "event": "Added to Cart",
     "advertiser_id": "159358",
-    "advertiser_ref_id": "some-id",
-    "country_code": "US",
-    "device_brand": "some-brand",
-    "device_carrier": "some-carrier",
-    "device_ip": "10.0.0.2",
-    "iad_attribution": 1,
-    "ios_ad_tracking": 0,
-    "language": "en-US",
-    "package_name": "com.segment.TestApp",
-    "sdk": "ios",
-    "user_id": "user-id",
-    "revenue": "19",
-    "currency_code": "USD",
-    "site_event_items": [
-      {
-        "name": "Monopoly: 3rd Edition",
-        "unit_price": "19",
-        "quantity": "1",
-        "value": "19"
-      }
-    ]
+    "advertiser_tracking_enabled": 1,
+    "application_tracking_enabled": 1,
+    "bundle_id": "com.segment.TestApp",
+    "ContentID": "507f1f77bcf86cd799439011",
+    "ContentType": "Games",
+    "valueToSum": 19
   }
 }

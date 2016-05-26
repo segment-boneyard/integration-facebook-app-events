@@ -1,10 +1,11 @@
 {
   "input": {
     "type": "track",
-    "event": "Product Viewed",
+    "event": "Payment Info Added",
     "userId": "user-id",
-    "properties": {},
-    "timestamp": "2015-11-09",
+    "properties": {
+      "payment_method": "Visa"
+    },
     "context": {
       "ip": "10.0.0.2",
       "app": { "namespace": "com.segment.TestApp" },
@@ -25,10 +26,11 @@
     }
   },
   "output": {
-    "event": "Content Viewed",
+    "event": "Added Payment Info",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
-    "bundle_id": "com.segment.TestApp"
+    "bundle_id": "com.segment.TestApp",
+    "payment_method": "Visa"
   }
 }

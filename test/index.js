@@ -96,7 +96,37 @@ describe('Facebook App Events', function(){
 
     describe('Products Viewed', function() {
       it('should map Products Viewed', function(){
-        test.maps('track-viewed-product');
+        test.maps('track-ecommerce-viewed-product');
+      })
+    });
+
+    describe('Product Added To Wishlist', function() {
+      it('should map Product Added To Wishlist', function(){
+        test.maps('track-ecommerce-wishlisted-product');
+      })
+    });
+
+    describe('Product Added To Cart', function() {
+      it('should map Product Added To Cart', function(){
+        test.maps('track-ecommerce-added-product');
+      })
+    });
+
+    describe('Payment Info Added', function() {
+      it('should map Payment Info Added', function(){
+        test.maps('track-ecommerce-payment-info');
+      })
+    });
+
+    describe('Checkout Started', function() {
+      it('should map Checkout Started', function(){
+        test.maps('track-ecommerce-checkout-started');
+      })
+    });
+
+    describe('Checkout Step 2', function() {
+      it('should map Checkout Step 2', function(){
+        test.maps('track-ecommerce-completed-order');
       })
     });
 
@@ -141,7 +171,43 @@ describe('Facebook App Events', function(){
     });
 
     it('should track Products Viewed correctly', function(done){
-      var json = test.fixture('track-viewed-product');
+      var json = test.fixture('track-ecommerce-viewed-product');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Products Wishlisted correctly', function(done){
+      var json = test.fixture('track-ecommerce-wishlisted-product');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Payment Info Added correctly', function(done){
+      var json = test.fixture('track-ecommerce-payment-info');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Checkout Started correctly', function(done){
+      var json = test.fixture('track-ecommerce-checkout-started');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Checkout Step 2 correctly', function(done){
+      var json = test.fixture('track-ecommerce-completed-order');
       test
         .track(json.input)
         .query(json.output)
