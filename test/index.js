@@ -12,8 +12,7 @@ describe('Facebook App Events', function(){
 
   beforeEach(function(){
     settings = {
-      advertiserId: '159358',
-      appId: '1553537634940964'
+      appId: '159358'
     };
   });
 
@@ -27,8 +26,7 @@ describe('Facebook App Events', function(){
       .name('Facebook App Events')
       .endpoint('https://graph.facebook.com/2.6/')
       .channels(['server'])
-      .ensure('settings.appId')
-      .ensure('settings.advertiserId');
+      .ensure('settings.appId');
   });
 
   describe('.validate()', function(){
@@ -37,19 +35,24 @@ describe('Facebook App Events', function(){
     beforeEach(function(){
       msg = {
         type: 'track',
+        event: 'Character Upgraded',
+        timestamp: new Date(),
         context: {
           app: {
-            namespace: 'com.Segment.testApp'
+            namespace: 'com.Segment.testApp',
+            version: 1.0
           },
           device: {
-            type: 'ios'
+            type: 'ios',
+            advertiserId: '123456',
+            adTrackingEnabled: 1
           }
         }
       };
     });
 
     it('should be invalid when .advertiserId is missing', function(){
-      delete settings.appId;
+      delete msg.context.device.advertiserId;
       test.invalid(msg, settings);
     });
 
@@ -61,6 +64,17 @@ describe('Facebook App Events', function(){
     it('should be valid when settings are complete', function(){
       test.valid(msg, settings);
     });
+  });
 
+  describe.skip('track', function(){
+
+      it('should track basic correctly', function(done){
+        var json = test.fixture('track-basic');
+        test
+          .track(json.input)
+          .query(json.output)
+          .expects(200)
+          .end(done);
+      });
   });
 });

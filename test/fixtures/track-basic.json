@@ -9,7 +9,8 @@
       "app": { "namespace": "com.segment.TestApp" },
       "device": {
         "manufacturer": "some-brand",
-        "type": "ios"
+        "type": "ios",
+        "advertisingId": "159358"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -23,18 +24,12 @@
     }
   },
   "output": {
-    "action": "session",
+    "event": "CUSTOM_APP_EVENTS",
     "advertiser_id": "159358",
-    "advertiser_ref_id": "some-id",
-    "country_code": "US",
-    "device_brand": "some-brand",
-    "device_carrier": "some-carrier",
-    "device_ip": "10.0.0.2",
-    "iad_attribution": 1,
-    "ios_ad_tracking": 0,
-    "language": "en-US",
-    "package_name": "com.segment.TestApp",
-    "sdk": "ios",
-    "user_id": "user-id"
+    "advertiser_tracking_enabled": 1,
+    "application_tracking_enabled": 1,
+    "custom_events": {
+      "_eventName": "Opened App"
+    }
   }
 }
