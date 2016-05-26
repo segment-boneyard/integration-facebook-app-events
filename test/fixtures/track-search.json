@@ -1,7 +1,7 @@
 {
   "input": {
     "type": "track",
-    "event": "Sang a Song",
+    "event": "Products Searched",
     "userId": "user-id",
     "properties": {},
     "timestamp": "2015-11-09",
@@ -25,14 +25,10 @@
     }
   },
   "output": {
-    "event": "CUSTOM_APP_EVENTS",
+    "event": "Searched",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
-    "bundle_id": "com.segment.TestApp",
-    "custom_events": {
-      "_eventName": "Sang a Song",
-      "_logTime": 1447027200
-    }
+    "bundle_id": "com.segment.TestApp"
   }
 }

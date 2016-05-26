@@ -4,6 +4,7 @@ var assert = require('assert');
 var facade = require('segmentio-facade');
 var should = require('should');
 var FacebookAppEvents = require('..');
+var mapper = require('../lib/mapper');
 
 describe('Facebook App Events', function(){
   var settings;
@@ -12,13 +13,15 @@ describe('Facebook App Events', function(){
 
   beforeEach(function(){
     settings = {
-      appId: '159358'
+      appId: '159358',
+      appEvents: {}
     };
   });
 
   beforeEach(function(){
     facebookAppEvents = new FacebookAppEvents(settings);
     test = Test(facebookAppEvents, __dirname);
+    test.mapper(mapper);
   });
 
   it('should have the correct settings', function(){
@@ -72,31 +75,63 @@ describe('Facebook App Events', function(){
         test.maps('track-basic');
       });
     });
+
+    describe('Application Installed', function() {
+      it('should map Application Installed', function(){
+        test.maps('track-app-install');
+      })
+    });
+
     describe('Application Opened', function() {
       it('should map Application Opened', function(){
         test.maps('track-app-opened');
       })
     });
+
+    describe('Products Searched', function() {
+      it('should map Products Searched', function(){
+        test.maps('track-search');
+      })
+    });
+
   });
 
   describe.skip('track', function(){
 
-      it('should track basic correctly', function(done){
-        var json = test.fixture('track-basic');
-        test
-          .track(json.input)
-          .query(json.output)
-          .expects(200)
-          .end(done);
-      });
+    it('should track basic correctly', function(done){
+      var json = test.fixture('track-basic');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
 
-      it('should track Application Opened correctly', function(done){
-        var json = test.fixture('track-app-opened');
-        test
-          .track(json.input)
-          .query(json.output)
-          .expects(200)
-          .end(done);
-      });
+    it('should track Application Installed correctly', function(done){
+      var json = test.fixture('track-app-install');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Application Opened correctly', function(done){
+      var json = test.fixture('track-app-opened');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Products Searched correctly', function(done){
+      var json = test.fixture('track-search');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
   });
 });

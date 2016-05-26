@@ -4,6 +4,7 @@
     "event": "Application Opened",
     "userId": "user-id",
     "properties": {},
+    "timestamp": "2015-11-09",
     "context": {
       "ip": "10.0.0.2",
       "app": { "namespace": "com.segment.TestApp" },
@@ -27,6 +28,7 @@
     "event": "Launched App",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
-    "application_tracking_enabled": 1
+    "application_tracking_enabled": 1,
+    "bundle_id": "com.segment.TestApp"
   }
 }

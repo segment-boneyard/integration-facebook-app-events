@@ -27,6 +27,7 @@
     "event": "App Install",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
-    "application_tracking_enabled": 1
+    "application_tracking_enabled": 1,
+    "bundle_id": "com.segment.TestApp"
   }
 }
