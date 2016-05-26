@@ -1,9 +1,9 @@
 {
   "input": {
     "type": "track",
-    "event": "Products Searched",
+    "event": "Product Viewed",
     "userId": "user-id",
-    "properties": {"query": "dogtooth"},
+    "properties": {},
     "timestamp": "2015-11-09",
     "context": {
       "ip": "10.0.0.2",
@@ -25,11 +25,10 @@
     }
   },
   "output": {
-    "event": "Searched",
+    "event": "Content Viewed",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
-    "bundle_id": "com.segment.TestApp",
-    "SearchString": "dogtooth"
+    "bundle_id": "com.segment.TestApp"
   }
 }

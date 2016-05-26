@@ -94,6 +94,12 @@ describe('Facebook App Events', function(){
       })
     });
 
+    describe('Products Viewed', function() {
+      it('should map Products Viewed', function(){
+        test.maps('track-viewed-product');
+      })
+    });
+
   });
 
   describe.skip('track', function(){
@@ -127,6 +133,15 @@ describe('Facebook App Events', function(){
 
     it('should track Products Searched correctly', function(done){
       var json = test.fixture('track-search');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Products Viewed correctly', function(done){
+      var json = test.fixture('track-viewed-product');
       test
         .track(json.input)
         .query(json.output)
