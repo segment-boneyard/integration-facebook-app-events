@@ -3,6 +3,7 @@
     "type": "track",
     "event": "Order Started",
     "userId": "user-id",
+    "timestamp": "2015-11-09",
     "properties": {
       "order_id": "50314b8e9bcf000000000000",
         "affiliation": "Google Store",
@@ -53,12 +54,13 @@
   },
   "output": {
     "event": "Initiated Checkout",
+    "_valueToSum": 25,
+    "_logTime": 1447027200,
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "Currency": "USD",
-    "valueToSum": 25,
-    "numberOfProducts": 2
+    "currency": "USD",
+    "number_of_products": 2
   }
 }

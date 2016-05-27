@@ -3,6 +3,7 @@
     "type": "track",
     "event": "Product Added to Wishlist",
     "userId": "user-id",
+    "timestamp": "2015-11-09",
     "properties": {
       "id": "507f1f77bcf86cd799439011",
       "sku": "45790-32",
@@ -36,8 +37,10 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "ContentID": "507f1f77bcf86cd799439011",
-    "ContentType": "Games",
-    "valueToSum": 19
+    "content_id": "507f1f77bcf86cd799439011",
+    "description": "Monopoly: 3rd Edition",
+    "content_type": "Games",
+    "_logTime": 1447027200,
+    "_valueToSum": 19
   }
 }

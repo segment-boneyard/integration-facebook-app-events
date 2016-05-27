@@ -30,6 +30,6 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "SearchString": "dogtooth"
+    "search_string": "dogtooth"
   }
 }

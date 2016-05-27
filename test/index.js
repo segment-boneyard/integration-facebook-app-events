@@ -47,15 +47,15 @@ describe('Facebook App Events', function(){
           },
           device: {
             type: 'ios',
-            advertiserId: '123456',
+            advertisingId: '123456',
             adTrackingEnabled: 1
           }
         }
       };
     });
 
-    it('should be invalid when .advertiserId is missing', function(){
-      delete msg.context.device.advertiserId;
+    it('should be invalid when .advertisingId is missing', function(){
+      delete msg.context.device.advertisingId;
       test.invalid(msg, settings);
     });
 
@@ -206,7 +206,7 @@ describe('Facebook App Events', function(){
         .end(done);
     });
 
-    it('should track Checkout Step 2 correctly', function(done){
+    it('should track Order Completed correctly', function(done){
       var json = test.fixture('track-ecommerce-completed-order');
       test
         .track(json.input)

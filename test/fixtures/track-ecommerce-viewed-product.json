@@ -3,6 +3,7 @@
     "type": "track",
     "event": "Product Viewed",
     "userId": "user-id",
+    "timestamp": "2015-11-09",
     "properties": {
       "id": "507f1f77bcf86cd799439011",
       "sku": "45790-32",
@@ -37,7 +38,9 @@
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
     "content_id": "507f1f77bcf86cd799439011",
+    "description": "Monopoly: 3rd Edition",
     "content_type": "Games",
-    "value_to_sum": 19
+    "_logTime": 1447027200,
+    "_valueToSum": 19
   }
 }
