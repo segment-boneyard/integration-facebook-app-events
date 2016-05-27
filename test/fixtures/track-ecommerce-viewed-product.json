@@ -36,8 +36,8 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "ContentID": "507f1f77bcf86cd799439011",
-    "ContentType": "Games",
-    "valueToSum": 19
+    "content_id": "507f1f77bcf86cd799439011",
+    "content_type": "Games",
+    "value_to_sum": 19
   }
 }
