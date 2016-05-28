@@ -25,11 +25,16 @@
     }
   },
   "output": {
-    "event": "Searched",
+    "event": "CUSTOM_APP_EVENTS",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "search_string": "dogtooth"
+    "custom_events": {
+      "_eventName": "fb_mobile_search",
+      "fb_search_string": "dogtooth",
+      "_logTime": 1447027200,
+      "fb_currency": "USD"
+    }
   }
 }

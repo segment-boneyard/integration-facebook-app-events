@@ -124,8 +124,8 @@ describe('Facebook App Events', function(){
       })
     });
 
-    describe('Checkout Step 2', function() {
-      it('should map Checkout Step 2', function(){
+    describe('Completed Order', function() {
+      it('should map Completed Order', function(){
         test.maps('track-ecommerce-completed-order');
       })
     });

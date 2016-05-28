@@ -3,6 +3,7 @@
     "type": "track",
     "event": "Payment Info Added",
     "userId": "user-id",
+    "timestamp": "2015-11-09",
     "properties": {
       "payment_method": "Visa"
     },
@@ -26,11 +27,16 @@
     }
   },
   "output": {
-    "event": "Added Payment Info",
+    "event": "CUSTOM_APP_EVENTS",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "payment_method": "Visa"
+    "custom_events": {
+      "_eventName": "fb_mobile_add_payment_info",
+      "_logTime": 1447027200,
+      "payment_method": "Visa",
+      "fb_currency": "USD"
+    }
   }
 }
