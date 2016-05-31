@@ -63,7 +63,7 @@
       "_logTime": 1447027200,
       "_valueToSum": 25,
       "_eventName": "fb_mobile_purchase",
-      "fb_num_items": 2,
+      "fb_num_items": 3,
       "fb_content_id": ["507f1f77bcf86cd799439011", "505bd76785ebb509fc183733"],
       "coupon": "hasbros",
       "total": 30,

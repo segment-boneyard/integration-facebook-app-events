@@ -3,7 +3,7 @@
     "type": "track",
     "event": "Products Searched",
     "userId": "user-id",
-    "properties": {"query": "dogtooth"},
+    "properties": { "query": "r2d2"},
     "timestamp": "2015-11-09",
     "context": {
       "ip": "10.0.0.2",
@@ -32,7 +32,7 @@
     "bundle_id": "com.segment.TestApp",
     "custom_events": {
       "_eventName": "fb_mobile_search",
-      "fb_search_string": "dogtooth",
+      "fb_search_string": "r2d2",
       "_logTime": 1447027200,
       "fb_currency": "USD"
     }
