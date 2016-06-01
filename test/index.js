@@ -14,7 +14,7 @@ describe('Facebook App Events', function(){
   beforeEach(function(){
     settings = {
       appId: '159358',
-      appEvents: {}
+      appEvents: { 'Levelled Up': 'fb_mobile_level_achieved' }
     };
   });
 
@@ -73,6 +73,12 @@ describe('Facebook App Events', function(){
     describe('track', function(){
       it('should map basic track', function(){
         test.maps('track-basic');
+      });
+    });
+
+    describe('custom track', function(){
+      it('should map custom track', function(){
+        test.maps('track-custom-mapped');
       });
     });
 
@@ -136,6 +142,15 @@ describe('Facebook App Events', function(){
 
     it('should track basic correctly', function(done){
       var json = test.fixture('track-basic');
+      test
+        .track(json.input)
+        .query(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track custom mapped events correctly', function(done){
+      var json = test.fixture('track-custom-mapped');
       test
         .track(json.input)
         .query(json.output)
