@@ -13,7 +13,7 @@ describe('Facebook App Events', function(){
 
   beforeEach(function(){
     settings = {
-      appId: '159358',
+      appId: '654757884637545',
       appEvents: { 'Levelled Up': 'fb_mobile_level_achieved' }
     };
   });
@@ -27,7 +27,7 @@ describe('Facebook App Events', function(){
   it('should have the correct settings', function(){
     test
       .name('Facebook App Events')
-      .endpoint('https://graph.facebook.com/2.6/')
+      .endpoint('https://graph.facebook.com/')
       .channels(['server'])
       .ensure('settings.appId');
   });
@@ -138,22 +138,22 @@ describe('Facebook App Events', function(){
 
   });
 
-  describe.skip('track', function(){
+  describe('track', function(){
 
     it('should track basic correctly', function(done){
       var json = test.fixture('track-basic');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
 
-    it('should track custom mapped events correctly', function(done){
+    it('should track custom correctly', function(done){
       var json = test.fixture('track-custom-mapped');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -162,7 +162,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-app-install');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -171,7 +171,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-app-opened');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -180,7 +180,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-search');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -189,7 +189,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-ecommerce-viewed-product');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -198,7 +198,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-ecommerce-wishlisted-product');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -207,7 +207,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-ecommerce-payment-info');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -216,7 +216,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-ecommerce-checkout-started');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });
@@ -225,7 +225,7 @@ describe('Facebook App Events', function(){
       var json = test.fixture('track-ecommerce-completed-order');
       test
         .track(json.input)
-        .query(json.output)
+        .sends(json.output)
         .expects(200)
         .end(done);
     });

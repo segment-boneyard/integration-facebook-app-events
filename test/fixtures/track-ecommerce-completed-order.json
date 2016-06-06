@@ -58,38 +58,20 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "custom_events": {
-      "fb_currency": "USD",
-      "_logTime": 1447027200,
-      "_valueToSum": 25,
-      "_eventName": "fb_mobile_purchase",
-      "fb_num_items": 3,
-      "fb_content_id": ["507f1f77bcf86cd799439011", "505bd76785ebb509fc183733"],
-      "coupon": "hasbros",
-      "total": 30,
-      "discount": 2.5,
-      "shipping": 3,
-      "tax": 2,
-      "orderId": "50314b8e9bcf000000000000",
-      "repeat": true,
-      "products": [
-        {
-          "id": "507f1f77bcf86cd799439011",
-          "sku": "45790-32",
-          "name": "Monopoly: 3rd Edition",
-          "price": 19,
-          "quantity": 1,
-          "category": "Games"
-        },
-        {
-          "id": "505bd76785ebb509fc183733",
-          "sku": "46493-32",
-          "name": "Uno Card Game",
-          "price": 3,
-          "quantity": 2,
-          "category": "Games"
-        }
-      ]
-    }
+    "custom_events": [{
+          "fb_currency": "USD",
+          "_logTime": 1447027200,
+          "_valueToSum": 25,
+          "_eventName": "fb_mobile_purchase",
+          "fb_num_items": 3,
+          "fb_content_id": ["507f1f77bcf86cd799439011", "505bd76785ebb509fc183733"],
+          "coupon": "hasbros",
+          "total": 30,
+          "discount": 2.5,
+          "shipping": 3,
+          "tax": 2,
+          "orderId": "50314b8e9bcf000000000000",
+          "repeat": true
+        }]
   }
 }

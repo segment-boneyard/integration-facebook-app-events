@@ -24,7 +24,7 @@
     }
   },
   "output": {
-    "event": "App Install",
+    "event": "MOBILE_APP_INSTALL",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,

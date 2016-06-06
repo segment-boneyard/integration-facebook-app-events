@@ -30,10 +30,10 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "custom_events": {
+    "custom_events": [{
       "_eventName": "fb_mobile_activate_app",
       "_logTime": 1447027200,
       "fb_currency": "USD"
-    }
+    }]
   }
 }
