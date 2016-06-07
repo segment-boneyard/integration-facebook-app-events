@@ -32,15 +32,21 @@
     }
   },
   "output": {
-    "event": "Viewed Content",
+    "event": "CUSTOM_APP_EVENTS",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "content_id": "507f1f77bcf86cd799439011",
-    "description": "Monopoly: 3rd Edition",
-    "content_type": "Games",
-    "_logTime": 1447027200,
-    "_valueToSum": 19
+    "custom_events": [{
+          "_logTime": 1447027200,
+          "_valueToSum": 19,
+          "_eventName": "fb_mobile_content_view",
+          "fb_content_id": "507f1f77bcf86cd799439011",
+          "fb_description": "Monopoly: 3rd Edition",
+          "fb_content_type": "Games",
+          "fb_currency": "USD",
+          "fb_num_items": 1,
+          "sku": "45790-32"
+        }]
   }
 }
