@@ -1,4 +1,10 @@
 
+1.0.3 / 2016-06-13
+==================
+
+  * Replace periods in custom event names with underscores
+  * Truncate custom event names > 40 characters
+
 1.0.2 / 2016-06-07
 ==================
 
