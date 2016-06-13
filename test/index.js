@@ -88,6 +88,12 @@ describe('Facebook App Events', function(){
       });
     });
 
+    describe('events with long names', function(){
+      it('should correctly truncate event names >= 40 characters', function(){
+        test.maps('track-long-names');
+      });
+    });
+
     describe('Application Installed', function() {
       it('should map Application Installed', function(){
         test.maps('track-app-install');
@@ -157,6 +163,15 @@ describe('Facebook App Events', function(){
 
     it('should track custom correctly', function(done){
       var json = test.fixture('track-custom-mapped');
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track long named events correctly', function(done){
+      var json = test.fixture('track-long-names');
       test
         .track(json.input)
         .sends(json.output)

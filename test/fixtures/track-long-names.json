@@ -1,18 +1,24 @@
 {
   "input": {
     "type": "track",
-    "event": "Application Installed",
+    "event": "Testing in case someone sends us events with names longer than 40 characters",
     "userId": "user-id",
     "properties": {},
+    "timestamp": "2015-11-09",
     "context": {
       "ip": "10.0.0.2",
-      "app": { "namespace": "com.segment.TestApp", "version": 2 },
+      "app": {
+        "namespace": "com.segment.TestApp",
+        "version": 2
+      },
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
         "advertisingId": "159358"
       },
-      "network": { "carrier": "some-carrier" },
+      "network": {
+        "carrier": "some-carrier"
+      },
       "locale": "en-US",
       "library": {
         "name": "analytics-ios"
@@ -24,11 +30,18 @@
     }
   },
   "output": {
-    "event": "MOBILE_APP_INSTALL",
+    "event": "CUSTOM_APP_EVENTS",
     "advertiser_id": "159358",
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "bundle_short_version": 2
+    "bundle_short_version": 2,
+    "custom_events": [
+      {
+        "_eventName": "Testing in case someone sends us events ",
+        "_logTime": 1447027200,
+        "fb_currency": "USD"
+      }
+    ]
   }
 }

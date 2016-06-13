@@ -14,7 +14,7 @@
     },
     "context": {
       "ip": "10.0.0.2",
-      "app": { "namespace": "com.segment.TestApp" },
+      "app": { "namespace": "com.segment.TestApp", "version": 2.0 },
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
@@ -37,6 +37,7 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
+    "bundle_short_version": 2.0,
     "custom_events": [{
           "fb_content_id": "507f1f77bcf86cd799439011",
           "fb_description": "Monopoly: 3rd Edition",
