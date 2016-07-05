@@ -82,6 +82,12 @@ describe('Facebook App Events', function(){
       });
     });
 
+    describe('custom unmapped track', function(){
+      it('should map custom unmapped event track', function(){
+        test.maps('track-custom-not-mapped');
+      });
+    });
+
     describe('custom track with a period in the name', function(){
       it('should map custom track with a period in the name', function(){
         test.maps('track-custom-period');

@@ -40,6 +40,7 @@
       {
         "_eventName": "Testing in case someone sends us events ",
         "_logTime": 1447027200,
+        "_appVersion": 2,
         "fb_currency": "USD"
       }
     ]

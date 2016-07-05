@@ -1,13 +1,16 @@
 {
   "input": {
     "type": "track",
-    "event": "Password Changed",
+    "event": "Clicked Something",
     "userId": "user-id",
-    "properties": {},
+    "properties": { "level": 10 },
     "timestamp": "2015-11-09",
     "context": {
       "ip": "10.0.0.2",
-      "app": { "namespace": "com.segment.TestApp", "version": 2 },
+      "app": { 
+        "namespace": "com.segment.TestApp", 
+        "version": 2.0 
+      },
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
@@ -30,12 +33,13 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "bundle_short_version": 2,
+    "bundle_short_version": 2.0,
     "custom_events": [{
-          "_eventName": "Password Changed",
+          "_eventName": "Clicked Something",
           "_logTime": 1447027200,
-          "_appVersion": 2,
-          "fb_currency": "USD"
-      }]
+          "_appVersion": 2.0,
+          "fb_currency": "USD",
+          "level": 10
+        }]
   }
 }
