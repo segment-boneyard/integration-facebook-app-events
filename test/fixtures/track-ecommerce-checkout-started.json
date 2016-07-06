@@ -35,7 +35,7 @@
     },
     "context": {
       "ip": "10.0.0.2",
-      "app": { "namespace": "com.segment.TestApp" },
+      "app": { "namespace": "com.segment.TestApp", "version": 2 },
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
@@ -58,10 +58,12 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
+    "bundle_short_version": 2,
     "custom_events": [{
           "_eventName": "fb_mobile_initiated_checkout",
           "_valueToSum": 25,
           "_logTime": 1447027200,
+          "_appVersion": 2,
           "fb_currency": "USD",
           "fb_num_items": 3,
           "fb_content_id": ["507f1f77bcf86cd799439011", "505bd76785ebb509fc183733"],

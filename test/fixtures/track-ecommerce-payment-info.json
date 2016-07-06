@@ -9,7 +9,8 @@
     },
     "context": {
       "ip": "10.0.0.2",
-      "app": { "namespace": "com.segment.TestApp" },
+      "app": { "namespace": "com.segment.TestApp",
+      "version": 2  },
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
@@ -32,9 +33,11 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
+    "bundle_short_version": 2,
     "custom_events": [{
           "_eventName": "fb_mobile_add_payment_info",
           "_logTime": 1447027200,
+          "_appVersion": 2,
           "payment_method": "Visa",
           "fb_currency": "USD"
         }]

@@ -33,7 +33,7 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
-    "bundle_short_version": 2.0,
+    "bundle_short_version": 2,
     "custom_events": [{
           "_eventName": "Clicked Something",
           "_logTime": 1447027200,
