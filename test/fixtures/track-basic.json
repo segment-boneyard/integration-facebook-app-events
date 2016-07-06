@@ -34,6 +34,7 @@
     "custom_events": [{
           "_eventName": "Password Changed",
           "_logTime": 1447027200,
+          "_appVersion": 2,
           "fb_currency": "USD"
       }]
   }

@@ -10,7 +10,8 @@
     "context": {
       "ip": "10.0.0.2",
       "app": {
-        "namespace": "com.segment.TestApp"
+        "namespace": "com.segment.TestApp",
+        "version": 2 
       },
       "device": {
         "manufacturer": "some-brand",
@@ -36,12 +37,14 @@
     "advertiser_tracking_enabled": 1,
     "application_tracking_enabled": 1,
     "bundle_id": "com.segment.TestApp",
+    "bundle_short_version": 2,
     "custom_events": [
       {
         "_eventName": "Friend_Added",
         "_logTime": 1447027200,
         "fb_currency": "USD",
-        "level": 10
+        "level": 10,
+        "_appVersion": 2
       }
     ]
   }
