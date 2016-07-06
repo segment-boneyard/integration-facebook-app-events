@@ -1,6 +1,6 @@
 {
   "name": "integration-facebook-app-events",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "description": "Facebook App Events server-side integration",
   "author": "Segment <friends@segment.com>",

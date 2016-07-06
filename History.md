@@ -1,4 +1,10 @@
 
+1.0.4 / 2016-07-05
+==================
+
+  * Bug fix for UI issue where appEvent names could be null
+  * Include _appVersion and bundle_short_id on all calls
+
 1.0.3 / 2016-06-13
 ==================
 
