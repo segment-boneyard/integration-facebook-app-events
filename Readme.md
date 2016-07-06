@@ -1,4 +1,4 @@
-[![Build Status](https://circleci.com/gh/segment-integrations/integration-facebook-app-events.svg?style=flat)](https://circleci.com/gh/segment-integrations/integration-facebook-app-events)
+[![CircleCI](https://circleci.com/gh/segment-integrations/integration-facebook-app-events/tree/master.svg?style=svg)](https://circleci.com/gh/segment-integrations/integration-facebook-app-events)
 
 # integration-facebook-app-events
 
