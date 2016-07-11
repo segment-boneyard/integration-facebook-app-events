@@ -1,4 +1,9 @@
 
+1.0.5 / 2016-07-11
+==================
+
+  * Fix for consistent API endpoint for Application Opened event
+
 1.0.4 / 2016-07-05
 ==================
 
