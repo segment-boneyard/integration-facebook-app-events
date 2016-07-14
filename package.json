@@ -18,7 +18,7 @@
     "is": "^2.1.0",
     "qs": "^2.3.3",
     "reject": "0.0.1",
-    "segmentio-integration": "^4.0.0",
+    "segmentio-integration": "git+ssh://git@github.com/segmentio/integration#server-side-debugger-dep",
     "unix-time": "^1.0.1"
   },
   "devDependencies": {
