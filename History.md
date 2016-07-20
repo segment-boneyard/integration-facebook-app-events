@@ -1,4 +1,9 @@
 
+1.0.6 / 2016-07-20
+==================
+
+  * Respect adTrackingEnabled field in context
+
 1.0.5 / 2016-07-11
 ==================
 
