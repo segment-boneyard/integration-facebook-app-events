@@ -11,7 +11,8 @@
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
-        "advertisingId": "159358"
+        "advertisingId": "159358",
+        "adTrackingEnabled": false
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -27,8 +28,8 @@
   "output": {
     "event": "CUSTOM_APP_EVENTS",
     "advertiser_id": "159358",
-    "advertiser_tracking_enabled": 1,
-    "application_tracking_enabled": 1,
+    "advertiser_tracking_enabled": 0,
+    "application_tracking_enabled": 0,
     "bundle_id": "com.segment.TestApp",
     "bundle_short_version": 2,
     "custom_events": [{
