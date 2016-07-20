@@ -14,7 +14,8 @@
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
-        "advertisingId": "159358"
+        "advertisingId": "159358",
+        "adTrackingEnabled": true
       },
       "network": {
         "carrier": "some-carrier"

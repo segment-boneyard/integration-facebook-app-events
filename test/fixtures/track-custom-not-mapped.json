@@ -7,14 +7,15 @@
     "timestamp": "2015-11-09",
     "context": {
       "ip": "10.0.0.2",
-      "app": { 
-        "namespace": "com.segment.TestApp", 
-        "version": 2.0 
+      "app": {
+        "namespace": "com.segment.TestApp",
+        "version": 2.0
       },
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
-        "advertisingId": "159358"
+        "advertisingId": "159358",
+        "adTrackingEnabled": true
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
