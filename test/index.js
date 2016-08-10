@@ -152,6 +152,10 @@ describe('Facebook App Events', function(){
       it('should map Completed Order', function(){
         test.maps('track-ecommerce-completed-order');
       })
+
+      it('should map Completed Order with options', function(){
+        test.maps('track-ecommerce-completed-order-options');
+      })
     });
 
   });
@@ -259,6 +263,15 @@ describe('Facebook App Events', function(){
 
     it('should track Order Completed correctly', function(done){
       var json = test.fixture('track-ecommerce-completed-order');
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Order Completed correctly with Facebook options', function(done){
+      var json = test.fixture('track-ecommerce-completed-order-options');
       test
         .track(json.input)
         .sends(json.output)
