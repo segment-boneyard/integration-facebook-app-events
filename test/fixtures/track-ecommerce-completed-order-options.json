@@ -1,0 +1,87 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Order Completed",
+    "userId": "user-id",
+    "timestamp": "2015-11-09",
+    "properties": {
+      "orderId": "50314b8e9bcf000000000000",
+      "total": 30,
+      "revenue": 25,
+      "shipping": 3,
+      "tax": 2,
+      "discount": 2.5,
+      "coupon": "hasbros",
+      "currency": "USD",
+      "repeat": true,
+      "products": [
+        {
+          "id": "507f1f77bcf86cd799439011",
+          "sku": "45790-32",
+          "name": "Monopoly: 3rd Edition",
+          "price": 19,
+          "quantity": 1,
+          "category": "Games"
+        },
+        {
+          "id": "505bd76785ebb509fc183733",
+          "sku": "46493-32",
+          "name": "Uno Card Game",
+          "price": 3,
+          "quantity": 2,
+          "category": "Games"
+        }
+      ]
+    },
+    "context": {
+      "ip": "10.0.0.2",
+      "app": { "namespace": "com.segment.TestApp", "version": 2 },
+      "device": {
+        "manufacturer": "some-brand",
+        "type": "ios",
+        "advertisingId": "159358",
+        "adTrackingEnabled": true
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-ios"
+      },
+      "referrer": {
+        "type": "iad",
+        "id": "some-id"
+      }
+    },
+    "integrations": {
+      "Facebook": {
+        "content_type": "product",
+        "content_id": ["123", "234"]
+      }
+    }
+  },
+  "output": {
+    "event": "CUSTOM_APP_EVENTS",
+    "advertiser_id": "159358",
+    "advertiser_tracking_enabled": 1,
+    "application_tracking_enabled": 1,
+    "bundle_id": "com.segment.TestApp",
+    "bundle_short_version": 2,
+    "custom_events": [{
+          "fb_currency": "USD",
+          "_logTime": 1447027200,
+          "_valueToSum": 25,
+          "_appVersion": 2,
+          "_eventName": "fb_mobile_purchase",
+          "fb_num_items": 3,
+          "fb_content_id": ["123", "234"],
+          "fb_content_type": "product",
+          "coupon": "hasbros",
+          "total": 30,
+          "discount": 2.5,
+          "shipping": 3,
+          "tax": 2,
+          "orderId": "50314b8e9bcf000000000000",
+          "repeat": true
+        }]
+  }
+}
