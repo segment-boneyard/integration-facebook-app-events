@@ -1,4 +1,9 @@
 
+1.0.7 / 2016-08-17
+==================
+
+  * add support to override facebook content_id and content_type
+
 1.0.6 / 2016-07-20
 ==================
 
