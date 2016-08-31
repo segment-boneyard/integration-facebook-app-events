@@ -1,7 +1,7 @@
 {
   "input": {
     "type": "track",
-    "event": "Order Started",
+    "event": "Checkout Started",
     "userId": "user-id",
     "timestamp": "2015-11-09",
     "properties": {
