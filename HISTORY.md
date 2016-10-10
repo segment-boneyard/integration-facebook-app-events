@@ -1,4 +1,9 @@
 
+1.1.1 / 2016-10-10
+==================
+
+  * Update PaymentInfoAdded to PaymentInfoEntered 
+
 1.1.0 / 2016-09-07
 ==================
 

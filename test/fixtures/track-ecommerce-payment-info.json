@@ -1,7 +1,7 @@
 {
   "input": {
     "type": "track",
-    "event": "Payment Info Added",
+    "event": "Payment Info Entered",
     "userId": "user-id",
     "timestamp": "2015-11-09",
     "properties": {

@@ -1,6 +1,6 @@
 {
   "name": "integration-facebook-app-events",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Facebook App Events server-side integration",
   "author": "Segment <friends@segment.com>",
@@ -27,7 +27,7 @@
     "jscs": "^1.6.2",
     "mocha": "2.x",
     "segmentio-facade": "2.x",
-    "segmentio-integration-tester": "1.x",
+    "segmentio-integration-tester": "^2.0.0",
     "should": "^4.1.0"
   },
   "publishConfig": {
