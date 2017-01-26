@@ -19,7 +19,7 @@
     "qs": "^2.3.3",
     "reject": "0.0.1",
     "segmentio-facade": "^3.1.0",
-    "segmentio-integration": "^5.0.1",
+    "segmentio-integration": "^5.1.0",
     "unix-time": "^1.0.1"
   },
   "devDependencies": {
