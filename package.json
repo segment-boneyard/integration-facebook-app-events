@@ -23,6 +23,11 @@
     "unix-time": "^1.0.1"
   },
   "devDependencies": {
+    "@segment/eslint-config": "^3.4.0",
+    "eslint": "^2.13.1",
+    "eslint-plugin-mocha": "^2.2.0",
+    "eslint-plugin-react": "^4.3.0",
+    "eslint-plugin-require-path-exists": "^1.1.5",
     "istanbul": "^0.3.0",
     "jscs": "^1.6.2",
     "mocha": "2.x",
