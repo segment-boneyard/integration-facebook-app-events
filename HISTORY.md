@@ -1,4 +1,9 @@
 
+1.2.0 / 2017-02-21
+==================
+
+  * Rebuild against newest integration worker version
+
 1.2.0 / 2017-01-31
 ==================
 
