@@ -1,3 +1,7 @@
+1.2.4 / 2017-03-27
+==================
+
+  * Protect against uncaught exceptions with undefined app var.
 
 1.2.0 / 2017-02-21
 ==================
